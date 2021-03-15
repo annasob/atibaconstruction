@@ -4,7 +4,7 @@ import { Navbar, Nav, Image } from 'react-bootstrap';
 export function TopNavigation(){
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-            <Navbar.Brand href="#home">
+            <Navbar.Brand>
                 <Image
                     src="/assets/img/logo.png"
                     width="120"
@@ -16,6 +16,7 @@ export function TopNavigation(){
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="mr-auto">
+                    <Nav.Link href="#services">Services</Nav.Link>
                     <Nav.Link href="#gallery">Gallery</Nav.Link>
                     <Nav.Link href="#about">About Us</Nav.Link>
                     <Nav.Link href="#contact">Contact Us</Nav.Link>

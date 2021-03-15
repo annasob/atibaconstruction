@@ -1,10 +1,10 @@
-import logo from './logo.svg';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { TopNavigation } from './components/TopNavigation';
 import { TopBanner } from './components/ParalaxBanner';
 import { Services } from './components/Services';
+import { Contact } from './components/Contact';
 import { ParallaxProvider } from 'react-scroll-parallax'
-import {Footer} from "./components/Footer";
+import { Footer } from "./components/Footer";
 
 function App() {
   return (
@@ -13,6 +13,7 @@ function App() {
           <TopNavigation />
           <TopBanner />
           <Services />
+          <Contact />
           <Footer/>
         </div>
     </ParallaxProvider >
