@@ -8,7 +8,7 @@ import { Container, Row, Col, Card, CardDeck } from 'react-bootstrap';
  */
 export function Services(){
     return (
-        <Container fluid style={{background: '#C0A59B'}} id={'services'}>
+        <Container fluid style={{background: '#BFADA3'}} id={'services'}>
             <Row>
                 <Col>
                     <hr />

@@ -1,5 +1,8 @@
 import React from 'react';
 import { Navbar, Nav, Image } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faEnvelope} from '@fortawesome/free-solid-svg-icons'
+import { faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
 
 export function TopNavigation(){
     return (
@@ -22,8 +25,11 @@ export function TopNavigation(){
                     <Nav.Link href="#contact">Contact Us</Nav.Link>
                 </Nav>
                 <Nav>
-                    <Nav.Link href="#fb">Facebook</Nav.Link>
-                    <Nav.Link href="#gmail">E-Mail</Nav.Link>
+                    <Nav.Link href="https://fb.me/atibaconstruction">
+                        <FontAwesomeIcon icon={faFacebookSquare} size={'2x'} />
+                    </Nav.Link>
+
+                    <Nav.Link href="mailto:atibaconstruction@gmail.com"><FontAwesomeIcon icon={faEnvelope} size={'2x'} /></Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

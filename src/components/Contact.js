@@ -1,12 +1,13 @@
 import React from 'react';
 import {Row, Col, Image, Container, CardDeck, Card} from 'react-bootstrap';
-import MessengerCustomerChat from 'react-messenger-customer-chat';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneSquareAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
 
+// ToDo: make fb url a constant
 export function Contact(){
     return (
-        <Container fluid style={{background: '#EEE2DF'}} id={'contact'}>
+        <Container fluid style={{background: '#684756'}} id={'contact'}>
             <Row>
                 <Col>
                     <hr />
@@ -23,14 +24,18 @@ export function Contact(){
                 </Col>
             </Row>
             <Row>
-                <Col>
+                <Col style={{marginRight: '.3rem'}}>
                     <div>
-                        <FontAwesomeIcon icon={faPhoneSquareAlt} style={{marginRight: '.6rem'}}/>
+                        <FontAwesomeIcon icon={faPhoneSquareAlt} />
                         <a href="tel:+1 347-351-1133"> +1 347-351-1133</a>
                     </div>
                     <div >
-                        <FontAwesomeIcon icon={faEnvelope} style={{marginRight: '.6rem'}}/>
+                        <FontAwesomeIcon icon={faEnvelope} />
                         <a href="mailto:atibaconstruction@gmail.com"> atibaconstruction@gmail.com</a>
+                    </div>
+                    <div>
+                        <FontAwesomeIcon icon={faFacebookSquare}/>
+                        <a href="https://fb.me/atibaconstruction"> atibaconstruction</a>
                     </div>
                 </Col>
             </Row>

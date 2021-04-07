@@ -6,27 +6,27 @@ import { faPhoneSquareAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
 export function Footer(){
     return (
-        <Container fluid style={{background: '#684756', flexWrap: 'nowrap'}}>
+        <Container fluid style={{background: '#EEE2DF', flexWrap: 'nowrap'}}>
             <Row>
                 <Image
                     src="/assets/img/logo.png"
-                    width="200"
-                    height="200"
+                    width="152"
+                    height="152"
                     className="d-inline-block align-top"
                     alt="Atiba Construction Inc."
                 />
-                <Col style={{paddingLeft: '4', marginTop:'1em'}}>
+                <Col >
 
                     <hr />
                     <h3> Contact Us </h3>
                     <hr />
                     <div>
-                        <FontAwesomeIcon icon={faPhoneSquareAlt} style={{marginRight: '.6rem'}}/>
+                        <FontAwesomeIcon icon={faPhoneSquareAlt} style={{marginRight: '.4rem'}}/>
                         <a href="tel:+1 347-351-1133"> +1 347-351-1133</a>
                     </div>
                     <div >
-                        <FontAwesomeIcon icon={faEnvelope} style={{marginRight: '.6rem'}}/>
-                        <a href="mailto:atibaconstruction@gmail.com"> atibaconstruction@gmail.com</a>
+                        <FontAwesomeIcon icon={faEnvelope} style={{marginRight: '.4rem'}}/>
+                        <a href="mailto:atibaconstruction@gmail.com"> GMail</a>
                     </div>
                     <MessengerCustomerChat
                         pageId="221129878668699"
